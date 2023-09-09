@@ -29,6 +29,7 @@ export default function Page() {
       inputNome.value = ""
       inputEmail.value = ""
       inputSenha.value = ""
+      
     }
     else {
       Swal.fire(
