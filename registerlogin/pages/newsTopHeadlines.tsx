@@ -1,8 +1,6 @@
-import ButtonBack from "@/components/ButtonBack"
 import CardNewsTopHeadlines from "@/components/CardNewsTopHeadlines"
 import getDataTopHeadlines from "@/services/api/getDataTopHeadlines"
 import { INewsTopHeadlines } from "@/types/dataTopHeadline"
-import Link from "next/link"
 import { useEffect, useState } from "react"
 
 const newsTopHeadlines = () => {
@@ -24,7 +22,7 @@ const newsTopHeadlines = () => {
     return (
         <>
             <div className="flex items-center justify-center">
-                <span className="font-semibold text-7x1 text-black">Portal de Notícias</span>
+                <span className="font-semibold text-4xl text-black">Portal de Notícias</span>
             </div>
 
             <div className="flex flex-wrap mx-auto w-4/5 justify-center ">

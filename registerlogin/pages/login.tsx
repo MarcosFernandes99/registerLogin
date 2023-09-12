@@ -3,6 +3,7 @@ import Swal from "sweetalert2"
 import { useState } from "react";
 import NewsTopHeadlines from "./newsTopHeadlines";
 import ButtonRegister from "@/components/ButtonRegister";
+import Inputs from "@/components/Inputs";
 
 
 export default function Login() {
@@ -44,8 +45,10 @@ export default function Login() {
           </Head>
           <section className="font-mono font-semibold flex flex-col w-80 mx-auto mt-20 bg-white rounded-xl p-3">
             <h1 className="h-10 flex items-center justify-center text-3xl text-black font-bold">ACESSE SUA CONTA</h1>
-            <input className="h-10 mt-5 rounded-xl px-2 bg-sky-100" type="text" placeholder="Email" value={emailLogin} onChange={(e) => setEmailLogin(e.target.value)} />
-            <input className="h-10 mt-5 rounded-xl px-2 bg-sky-100" type="text" placeholder="Senha" value={passwordLogin} onChange={(e) => setPasswordLogin(e.target.value)} />
+            {/* <input className="h-10 mt-5 rounded-xl px-2 bg-sky-100" type="text" placeholder="Email" value={emailLogin} onChange={(e) => setEmailLogin(e.target.value)} />
+            <input className="h-10 mt-5 rounded-xl px-2 bg-sky-100" type="text" placeholder="Senha" value={passwordLogin} onChange={(e) => setPasswordLogin(e.target.value)} /> */}
+            <Inputs onChange={(e) => setEmailLogin(e.target.value)} value={emailLogin} label="Email" />
+            <Inputs onChange={(e) => setPasswordLogin(e.target.value)} value={passwordLogin} label="Senha" />
             <ButtonRegister label="LOGIN" onClick={login}/>
           </section>
         </>

@@ -9,7 +9,7 @@ interface ButtonRegisterProps{
 
 const ButtonRegister: React.FC<ButtonRegisterProps> = ({label, onClick}) => {
     return (
-        <Button className="h-10 mt-10 text-xl bg-sky-400 rounded-xl p-2 font-bold"
+        <Button className="h-10 mt-5 text-xl bg-sky-400 rounded-xl p-2 font-bold"
             variant="contained"
             onClick={onClick}
         >

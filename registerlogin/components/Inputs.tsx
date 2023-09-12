@@ -2,7 +2,13 @@ import * as React from 'react';
 import Box from '@mui/joy/Box';
 import Input from '@mui/joy/Input';
 
-export default function Inputs() {
+interface InputsProps {
+  label: string
+  value: string
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => any
+}
+
+const Inputs: React.FC<InputsProps> = ({ label, value, onChange }) => {
   return (
     <Box
       sx={{
@@ -13,11 +19,13 @@ export default function Inputs() {
         flexWrap: 'wrap',
       }}
     >
-      <Input placeholder="Type in here…" variant="outlined" color="primary" />
-      <Input placeholder="Type in here…" variant="outlined" color="neutral" />
-      <Input placeholder="Type in here…" variant="outlined" color="danger" />
-      <Input placeholder="Type in here…" variant="outlined" color="success" />
-      <Input placeholder="Type in here…" variant="outlined" color="warning" />
+      <Input placeholder={label} variant="outlined" color="primary"
+        onChange={onChange}
+        value={value}
+      />
+
     </Box>
   );
 }
+
+export default Inputs
