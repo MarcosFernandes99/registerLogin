@@ -2,6 +2,7 @@ import CardNewsTopHeadlines from "@/components/CardNewsTopHeadlines"
 import getDataTopHeadlines from "@/services/api/getDataTopHeadlines"
 import { INewsTopHeadlines } from "@/types/dataTopHeadline"
 import { useEffect, useState } from "react"
+import Swal from "sweetalert2"
 
 const useTopHeadlines = () => {
     const [topHeadlines, setTopHeadlines] = useState<INewsTopHeadlines[]>([])
@@ -13,6 +14,11 @@ const useTopHeadlines = () => {
                 setTopHeadlines(data)
             } catch (error) {
                 console.log("Erro ao buscar os dados da API:", error)
+                Swal.fire(
+                    'Indisponível no momento!',
+                    'Pois para aparecer as notícias da API precisaria assinar um plano PRO na vercel!',
+                    'error'
+                  )
             }
         }
         fetchData()
