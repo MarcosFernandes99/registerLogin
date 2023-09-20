@@ -3,7 +3,7 @@ import getDataTopHeadlines from "@/services/api/getDataTopHeadlines"
 import { INewsTopHeadlines } from "@/types/dataTopHeadline"
 import { useEffect, useState } from "react"
 
-const newsTopHeadlines = () => {
+const useTopHeadlines = () => {
     const [topHeadlines, setTopHeadlines] = useState<INewsTopHeadlines[]>([])
 
     useEffect(() => {
@@ -42,4 +42,4 @@ const newsTopHeadlines = () => {
     )
 }
 
-export default newsTopHeadlines
+export default useTopHeadlines
