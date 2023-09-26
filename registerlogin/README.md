@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Register e Login
 
-## Getting Started
+### Tecnologias usadas:
+React, Next.js, Typescript, Hooks, API, React MUI e Tailwind CSS.
 
-First, run the development server:
+### Em geral:
+É um projeto onde o usuário faz o registro de uma conta, esses dados serão armazenados no Local Storage.
+A seguir, o usuário é direcionado a tela de login, onde ele precisa colocar o e-mail e senha registrados anteriormente.
+Após análise dos dados, se estiverem corretos, ele é direcionada ao Portal de notícias.
+É um projeto simples, onde aproveitei para treinar o uso de Hooks, Props, Solicitações API, e também para praticar um pouco o uso do Tailwind CSS, sendo o primeiro projeto o qual utilizei.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Pontos Extras:
+Usamos sweetalert também para as mensagens de alerta ao usuário e React MUI para os buttons e inputs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### API utilizada:
+https://newsapi.org/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> O projeto está disponível em "https://register-login-teal.vercel.app"
